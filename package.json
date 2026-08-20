@@ -1,0 +1,13 @@
+{
+  "name": "strata",
+  "version": "2.0.0",
+  "description": "STRATA — Universal Context Bridge (Model Context Protocol Server)",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "cd apps/api && uvicorn main:app --reload --port 8000",
+    "start:api": "cd apps/api && uvicorn main:app --host 0.0.0.0 --port 8000"
+  }
+}
